@@ -15,7 +15,7 @@ class Order {
     	static int active=0;
     	static public int total;
     	static Queue<Integer> q = new LinkedList<>();
-
+    	
 	public static void menu() {//this method represent the menu
 		System.out.println("\nFried Chicken\n   No.1 32 baht Original fried chicken \n   No.2 32 baht Crippy fired chicken ");
 		System.out.println("Burger \n   No.3 64 baht Chicken burger \n   No.4 70 baht Crippy fired chicken burger ");
@@ -25,7 +25,7 @@ class Order {
 			System.out.println("Welcome!!\n 1.make order\n 2.check queue \n 3.reset \n 4.cancel order");
 			String Fcheck="0";
 			int factive=0;
-
+			boolean qcheck=q.isEmpty();
 			do {
 				System.out.print(">>");
 				try{Fcheck = inputS.nextLine();}
@@ -37,21 +37,36 @@ class Order {
             	factive = 1;
                 break;
             case "2":
+            	if(qcheck==true) {
+            		System.out.println("There is no queue right now.");
+            	}
+            	else {
             	System.out.println("There are "+q);
-                break;
+            	}
+            	 break;
             case "3":
-            	
+            	if(qcheck==true) {
+            		System.out.println("There is no queue right now.");
+            	}
+            	else
+            	{
             	q.clear();
             	System.out.println("Queue has been reset ");
-            	System.out.println("There are "+q);
-                break;
+            	}
+            	break;
             case "4":
+            	if(qcheck==true) {
+            		System.out.println("There is no queue right now.");
+            	}
+            	else
+            	{
             	System.out.println("There are "+q);
             	System.out.println("Which one would you like to remove? ");
             	System.out.print(">>");
             	int remove = input.nextInt();
             	q.remove(remove);
             	System.out.println("There are "+q+" now");
+            	}
             	break;           
             case "0":
             	break;
