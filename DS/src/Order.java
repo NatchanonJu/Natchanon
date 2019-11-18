@@ -154,12 +154,12 @@ class Order {
 			
 		}while(active==0);{
 			System.out.print("No."+i+"\n");
-			if(obj1.fname!=null) {System.out.println(obj1.fname+" "+obj1.fqunt+" unit  "+obj1.fprice*obj1.fqunt+"  baht"); total+=obj1.fprice*obj1.fqunt;}
-			if(obj2.fname!=null) {System.out.println(obj2.fname+" "+obj2.fqunt+" unit  "+obj2.fprice*obj2.fqunt+"  baht"); total+=obj2.fprice*obj2.fqunt;}
-			if(obj3.fname!=null) {System.out.println(obj3.fname+" "+obj3.fqunt+" unit  "+obj3.fprice*obj3.fqunt+"  baht"); total+=obj3.fprice*obj3.fqunt;}
-			if(obj4.fname!=null) {System.out.println(obj4.fname+" "+obj4.fqunt+" unit  "+obj4.fprice*obj4.fqunt+"  baht"); total+=obj4.fprice*obj4.fqunt;}
-			if(obj5.fname!=null) {System.out.println(obj5.fname+" "+obj5.fqunt+" unit  "+obj5.fprice*obj5.fqunt+"  baht"); total+=obj5.fprice*obj5.fqunt;}
-			if(obj6.fname!=null) {System.out.println(obj6.fname+" "+obj6.fqunt+" unit  "+obj6.fprice*obj6.fqunt+"  baht"); total+=obj6.fprice*obj6.fqunt;}
+			if(obj1.fqunt!=0) {System.out.println(obj1.fname+" "+obj1.fqunt+" unit  "+obj1.fprice*obj1.fqunt+"  baht"); total+=obj1.fprice*obj1.fqunt;}
+			if(obj2.fqunt!=0) {System.out.println(obj2.fname+" "+obj2.fqunt+" unit  "+obj2.fprice*obj2.fqunt+"  baht"); total+=obj2.fprice*obj2.fqunt;}
+			if(obj3.fqunt!=0) {System.out.println(obj3.fname+" "+obj3.fqunt+" unit  "+obj3.fprice*obj3.fqunt+"  baht"); total+=obj3.fprice*obj3.fqunt;}
+			if(obj4.fqunt!=0) {System.out.println(obj4.fname+" "+obj4.fqunt+" unit  "+obj4.fprice*obj4.fqunt+"  baht"); total+=obj4.fprice*obj4.fqunt;}
+			if(obj5.fqunt!=0) {System.out.println(obj5.fname+" "+obj5.fqunt+" unit  "+obj5.fprice*obj5.fqunt+"  baht"); total+=obj5.fprice*obj5.fqunt;}
+			if(obj6.fqunt!=0) {System.out.println(obj6.fname+" "+obj6.fqunt+" unit  "+obj6.fprice*obj6.fqunt+"  baht"); total+=obj6.fprice*obj6.fqunt;}
 			System.out.println("Total value :"+total+" baht");
 			System.out.println("Please wait for a minutes, We are preparing your foods!!");
 			System.out.println("------------------------------------------------------------------------");
