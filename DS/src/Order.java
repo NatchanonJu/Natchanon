@@ -140,8 +140,7 @@ class Order {
     			obj5.fqunt=0;
     			obj6.fqunt=0;
     			total=0;
-    			active=0;
-    			q.remove(q.size());
+    			q.remove(i);
             	firstcommand();
             	break;
             case 9:
@@ -152,7 +151,7 @@ class Order {
                 break;
             }
 			
-		}while(active==0);{
+		}while(active==0);
 			System.out.print("No."+i+"\n");
 			if(obj1.fqunt!=0) {System.out.println(obj1.fname+" "+obj1.fqunt+" unit  "+obj1.fprice*obj1.fqunt+"  baht"); total+=obj1.fprice*obj1.fqunt;}
 			if(obj2.fqunt!=0) {System.out.println(obj2.fname+" "+obj2.fqunt+" unit  "+obj2.fprice*obj2.fqunt+"  baht"); total+=obj2.fprice*obj2.fqunt;}
@@ -173,7 +172,7 @@ class Order {
 			active=0;
 			
 			
-		}
+		
 		
 	}
 	
